@@ -17,18 +17,19 @@ body {
 #title-heading {
     background-color: rgb(196, 136, 18);
     text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 30px;
+    padding: 20px 20px 10px 20px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0px;
 }
 
 .add-task-container {
-    background-color: rgb(121, 82, 4);
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgb(196, 136, 18);
+    padding: 20px 20px 30px 20px;
+    border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 input{
@@ -45,11 +46,41 @@ button{
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
+}
+
+.add-task{
     color: rgb(5, 125, 5);
 }
 
-button:hover {
+.add-task:hover {
     background-color: rgb(52, 146, 52);
     color: beige;
 }
 
+.task-container {
+    background-color: rgb(121, 82, 4);
+    color: bisque;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-task{
+    color:rgb(196, 136, 18)
+}
+
+.check-task:hover{
+    background-color: rgb(196, 136, 18);
+    color: beige;
+}
+
+.delete-task{
+    color: rgb(160, 24, 24);
+}
+
+.delete-task:hover{
+    background-color: rgb(185, 21, 21);
+    color: beige;
+}
