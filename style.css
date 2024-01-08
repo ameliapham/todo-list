@@ -44,9 +44,11 @@ button{
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s;
 }
 
 button:hover {
-    background-color: rgb(239, 222, 188);
+    background-color: rgb(52, 146, 52);
+    color: beige;
 }
 
