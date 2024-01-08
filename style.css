@@ -45,6 +45,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
+    color: rgb(5, 125, 5);
 }
 
 button:hover {
