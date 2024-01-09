@@ -2,7 +2,7 @@ import './style.css'
 
 // Variables generals
 const input = document.querySelector('#input-task')
-input.value = null
+input.value = ""
 const taskContainer = document.querySelector('.task-container')
 
 // Variables for Adding button
@@ -10,8 +10,8 @@ const addButton = document.querySelector('.add-task')
 
 // Function for Adding button
 const addTask = () => {
-    if (input.value != null){
-
+    if (input.value != ""){
+        console.log(input.value)
         // Add new-task zone
         let newTask = document.createElement("div")
         newTask.className = "new-task"
@@ -44,7 +44,7 @@ const addTask = () => {
         buttons.appendChild(deleteButton)
         
         // Reset value of input
-        input.value = null
+        input.value = ""
 
         // Function for Checking button
         const checkTask = () => {
