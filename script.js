@@ -59,7 +59,13 @@ addButton.addEventListener('click', addTask)
 // Function for Checking button
 const checkTask = () => {
     tasks.style.textDecoration = "line-through"
-    console.log(tasks)
 }
 
 checkButton.addEventListener('click', checkTask)
+
+// Function for Deleting button
+const deleteTask = () => {
+    taskContainer.removeChild(newTask)
+}
+
+deleteButton.addEventListener('click', deleteTask)
