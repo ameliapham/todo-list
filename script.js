@@ -56,3 +56,10 @@ const addTask = () => {
 
 addButton.addEventListener('click', addTask)
 
+// Function for Checking button
+const checkTask = () => {
+    tasks.style.textDecoration = "line-through"
+    console.log(tasks)
+}
+
+checkButton.addEventListener('click', checkTask)
