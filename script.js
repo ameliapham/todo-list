@@ -11,7 +11,7 @@ const addButton = document.querySelector('.add-task')
 // Function for Adding button
 const addTask = () => {
     if (input.value != ""){
-        console.log(input.value)
+        
         // Add new-task zone
         let newTask = document.createElement("div")
         newTask.className = "new-task"
