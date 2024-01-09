@@ -35,7 +35,7 @@ const addTask = () => {
         let deleteButton = document.createElement("button")
         deleteButton.className = "delete-task"
         let iconDelete = document.createElement("i")
-        iconCheck.className = "ri-delete-bin-6-line ri-lg"
+        iconDelete.className = "ri-delete-bin-6-line ri-lg"
         deleteButton.appendChild(iconDelete)
 
         buttons.appendChild(checkButton)
