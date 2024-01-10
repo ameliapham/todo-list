@@ -32,9 +32,12 @@ const addTask = () => {
         // Add deleting button
         let deleteButton = document.createElement("button")
         deleteButton.className = "delete-task"
+        deleteButton.innerHTML = '<i class = "ri-delete-bin-6-line ri-lg"></i>'
+
+        /*
         let iconDelete = document.createElement("i")
         iconDelete.className = "ri-delete-bin-6-line ri-lg"
-        deleteButton.appendChild(iconDelete)
+        deleteButton.appendChild(iconDelete) */
 
         newTask.appendChild(deleteButton)
         
