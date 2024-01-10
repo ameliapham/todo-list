@@ -72,19 +72,15 @@ button{
     margin-bottom:5px;
 }
 
-.check-task{
-    color:rgb(196, 136, 18)
+.tasks {
+    width: 300px;
 }
 
-.check-task:hover{
-    background-color: rgb(196, 136, 18);
-    color: beige;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.check-box {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .delete-task{

@@ -11,11 +11,17 @@ const addButton = document.querySelector('.add-task')
 // Function for Adding button
 const addTask = () => {
     if (input.value != ""){
-        
+
         // Add new-task zone
         let newTask = document.createElement("div")
         newTask.className = "new-task"
         taskContainer.appendChild(newTask)
+
+        // Add checkbox
+        let checkBox = document.createElement("input")
+        checkBox.type = "checkbox"
+        checkBox.className = "check-box"
+        newTask.appendChild(checkBox)
 
         // Add tasks
         let tasks = document.createElement("p")
@@ -23,25 +29,14 @@ const addTask = () => {
         tasks.innerHTML = input.value
         newTask.append(tasks)
 
-        // Add buttons
-        let buttons = document.createElement("div")
-        buttons.className = "buttons"
-        newTask.appendChild(buttons)
-
-        let checkButton = document.createElement("button")
-        checkButton.className = "check-task"
-        let iconCheck = document.createElement("i")
-        iconCheck.className = "ri-check-line ri-lg"
-        checkButton.appendChild(iconCheck)
-
+        // Add deleting button
         let deleteButton = document.createElement("button")
         deleteButton.className = "delete-task"
         let iconDelete = document.createElement("i")
         iconDelete.className = "ri-delete-bin-6-line ri-lg"
         deleteButton.appendChild(iconDelete)
 
-        buttons.appendChild(checkButton)
-        buttons.appendChild(deleteButton)
+        newTask.appendChild(deleteButton)
         
         // Reset value of input
         input.value = ""
@@ -51,7 +46,7 @@ const addTask = () => {
             tasks.style.textDecoration = "line-through"
         }
 
-        checkButton.addEventListener('click', checkTask)
+        checkBox.addEventListener('click', checkTask)
 
         // Function for Deleting button
         const deleteTask = () => {
