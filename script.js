@@ -22,7 +22,7 @@ const addTask = () => {
         checkBox.type = "checkbox"
         checkBox.className = "check-box"
         newTask.appendChild(checkBox)
-
+        
         // Add tasks
         let tasks = document.createElement("p")
         tasks.className = "tasks"
@@ -41,9 +41,13 @@ const addTask = () => {
         // Reset value of input
         input.value = ""
 
-        // Function for Checking button
+        // Function for checkbox
         const checkTask = () => {
-            tasks.style.textDecoration = "line-through"
+            if (checkBox.checked) {
+                tasks.style.textDecoration = "line-through"
+            } else {
+                tasks.style.textDecoration = ""
+            }
         }
 
         checkBox.addEventListener('click', checkTask)
