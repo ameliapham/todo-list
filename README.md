@@ -1,2 +1,3 @@
 # todo-list
-Link of project: https://ap-todo-list.vercel.app/
+
+For a live experience, visit my [online demo](https://ap-todo-list.vercel.app/).
